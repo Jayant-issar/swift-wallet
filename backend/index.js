@@ -8,7 +8,7 @@ const cors = require('cors');
 
 app.use(cors(
     {
-        origin : ["https://deploy-mern-1whq.vercel.app"],
+        origin : ["https://swift-wallet-backend.vercel.app/"],
         methods: ["POST","GET",'PUT'],
         credentials: true
     }
