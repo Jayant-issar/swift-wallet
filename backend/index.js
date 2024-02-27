@@ -6,7 +6,13 @@ const cors = require('cors');
 
 
 
-app.use(cors()) // enabling the cors middleware to ensure cross origin resource sharing
+app.use(cors(
+    {
+        origin : ["https://deploy-mern-1whq.vercel.app"],
+        methods: ["POST","GET",'PUT'],
+        credentials: true
+    }
+)) // enabling the cors middleware to ensure cross origin resource sharing
 app.use(express.json()) //enabling the json middleware to make sure we are able to parse through the json data without fail
 
 
